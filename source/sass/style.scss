@@ -3,6 +3,7 @@
   src: url("../fonts/opensans.woff2") format("woff2"),
     url("../fonts/opensansbold.woff2") format("woff2");
 }
+
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
 @import "blocks/goods.scss";
@@ -28,7 +29,7 @@ body {
 }
 
 img {
-  max-width: 100%
+  max-width: 100%;
 }
 
 a {
