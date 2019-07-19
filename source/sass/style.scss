@@ -1,6 +1,17 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff2") format("woff2");
+}
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
 @import "blocks/goods.scss";
+@import "blocks/popular.scss";
+@import "blocks/about.scss";
+@import "blocks/reviews.scss";
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
 
 html {
   box-sizing: border-box;
@@ -23,4 +34,14 @@ img {
 a {
   color: #000000;
   text-decoration: none;
+}
+
+.btn {
+  padding: 15px 85px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
+  text-transform: uppercase;
+  color: #444444;
+  border: solid 2px #444444;
 }
