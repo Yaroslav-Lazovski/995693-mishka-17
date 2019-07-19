@@ -1,3 +1,26 @@
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/goods.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
-  background: blue;
+  margin: 0;
+}
+
+img {
+  max-width: 100%
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
 }
