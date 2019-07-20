@@ -1,38 +1,38 @@
 .popular {
   margin-bottom: 36px;
   font-family: "Open Sans", "Arial", sans-serif;
+}
 
-  &__title {
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 30px;
-    color: #000000;
-  }
+.popular__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+}
 
-  &__subtitle {
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 1.18;
-    text-transform: uppercase;
-    color: #63d1bb;
-  }
+.popular__subtitle {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.18;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
 
-  &__description {
-    font-size: 15px;
-    line-height: 1.6;
-    color: #444444;
-  }
+.popular__description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444444;
+}
 
-  &__properties {
-    font-size: 15px;
-    line-height: 1.33;
-    color: #444444;
-  }
+.popular__properties {
+  font-size: 15px;
+  line-height: 1.33;
+  color: #444444;
+}
 
-  &__price {
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 1.41;
-    color: #444444;
-  }
+.popular__price {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.41;
+  color: #444444;
 }

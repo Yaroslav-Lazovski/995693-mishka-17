@@ -6,30 +6,32 @@
   background-color: #fafafa;
   background-repeat: no-repeat;
   background-position: 0 0;
+}
 
-  &__title {
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.11;
-    color: #010000;
-  }
+.goods__title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.11;
+  color: #010000;
+}
 
-  &__list {
-    font-size: 19px;
-    font-weight: 700;
-    line-height: 24px;
-    list-style: none;
-  }
+.goods__list {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  list-style: none;
+}
 
-  &__item a {
-    color: #ffffff;
-  }
-
-  &__item--interior {
+.goods__item {
+  &--interior {
     background-color: #63d1bb;
   }
 
-  &__item--toys {
+  &--toys {
     background-color: #56c3b2;
   }
+}
+
+.goods__item a {
+  color: #ffffff;
 }

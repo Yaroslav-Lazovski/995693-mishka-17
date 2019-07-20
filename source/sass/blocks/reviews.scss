@@ -1,27 +1,27 @@
 .reviews {
   margin-bottom: 45px;
   font-family: "Open Sans", "Arial", sans-serif;
+}
 
-  &__title {
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 1.2;
-  }
+.reviews__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+}
 
-  &__text {
-    font-size: 15px;
-    line-height: 2;
-    color: #444444;
-  }
+.reviews__text {
+  font-size: 15px;
+  line-height: 2;
+  color: #444444;
+}
 
-  &__author {
-    font-style: normal;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 1.41;
-  }
+.reviews__author {
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.41;
 
-  &__author--mail {
+  &--mail {
     font-weight: 400;
     line-height: 1.76;
     color: #444444;

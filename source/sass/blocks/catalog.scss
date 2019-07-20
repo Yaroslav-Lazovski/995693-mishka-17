@@ -1,18 +1,40 @@
 .catalog {
   font-family: "Open Sans", "Arial", sans-serif;
+}
 
-  &__intro {
-    background-color: #f1f1f1;
-  }
+.catalog__intro {
+  background-color: #f1f1f1;
+}
 
-  &__title {
-    padding: 70px 42px;
-    font-size: 27px;
-    font-weight: 700;
-    line-height: 1.11;
-  }
+.catalog__title {
+  padding: 70px 42px;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.11;
+}
 
-  &__list {
-    list-style: none;
-  }
+.catalog__list {
+  list-style: none;
+}
+
+.product-list {
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.product-list__title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.41;
+}
+
+.product-list__properties {
+  font-size: 13px;
+  line-height: 2.31;
+  color: #444444;
+}
+
+.product-list__price {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.6;
 }
