@@ -1,5 +1,6 @@
 .goods {
   min-height: 490px;
+
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
@@ -79,7 +80,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .goods__container {
     width: 1050px;
   }
