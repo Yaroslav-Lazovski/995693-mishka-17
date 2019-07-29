@@ -1,4 +1,41 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
 .header__logo {
   display: block;
+  height: 80px;
   padding: 22px 0;
+
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .header__logo {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__logo {
+    text-align-last: center;
+  }
+
+  .header__container {
+    width: 1050px;
+  }
 }

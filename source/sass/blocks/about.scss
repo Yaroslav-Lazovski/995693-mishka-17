@@ -3,15 +3,59 @@
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
+.about__container {
+  width: 260px;
+  margin: 0 auto;
+}
+
 .about__title {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 84px;
+
   font-size: 25px;
   font-weight: 700;
   line-height: 1.2;
 }
 
 .about__list {
+  margin: 0;
+  padding: 0;
+
   font-size: 17px;
   font-weight: 700;
   line-height: 1.18;
   list-style: none;
+}
+
+.about__item {
+  margin-bottom: 80px;
+}
+
+@media (min-width: $tablet-width) {
+  .about__container {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .about__item {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__container {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .about__item {
+    width: 351px;
+  }
 }
