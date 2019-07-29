@@ -3,24 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка. Форма</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
     <header class="header">
-      <a class="header__logo" href="index.html">
-        <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35"
-          alt="Логотип интернет-магазина «Мишка»">
-      </a>
-      <nav class="nav">
-        <button class="nav__burger" type="button">Открыть меню</button>
-        <div class="nav__container">
-          <ul class="nav__list site-list">
-            <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="site-list__item"><a>Вязание на заказ</a></li>
-            <li class="site-list__item"><a href="search.html">Поиск по сайту</a></li>
-            <li class="site-list__item"><a href="cart.html">Корзина: пока пуста</a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="header__container">
+        <a class="header__logo" href="index.html">
+          <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35"
+            alt="Логотип интернет-магазина «Мишка»">
+        </a>
+        <nav class="nav">
+          <!-- <button class="nav__burger" type="button">Открыть меню</button> -->
+          <div class="nav__container">
+            <ul class="nav__list site-list">
+              <li class="site-list__item site-list__item--logo-tablet">
+                <a class="site-list__logo-tablet" href="index.html">
+                  <img class="site-list__logo-image" src="img/logo-tablet.svg" width="112" height="46"
+                    alt="Логотип интернет-магазина «Мишка»">
+                </a>
+              </li>
+              <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
+              <li class="site-list__item"><a>Вязание на заказ</a></li>
+              <li class="site-list__item site-list__item--logo-desktop">
+                <a class="site-list__logo-desktop" href="index.html">
+                  <img class="site-list__logo-image" src="img/logo-desktop.svg" width="149" height="72"
+                    alt="Логотип интернет-магазина «Мишка»">
+                </a>
+              </li>
+              <li class="site-list__item"><a href="search.html">Поиск по сайту</a></li>
+              <li class="site-list__item"><a href="cart.html">Корзина: пока пуста</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="main">
     </main>
