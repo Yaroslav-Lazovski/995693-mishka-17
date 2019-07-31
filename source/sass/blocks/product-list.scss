@@ -1,21 +1,61 @@
 .product-list {
   font-family: "Open Sans", "Arial", sans-serif;
+  text-align: center;
 }
 
 .product-list__title {
+  margin: 0;
+
   font-size: 17px;
   font-weight: 700;
   line-height: 1.41;
 }
 
 .product-list__properties {
+  margin: 0;
+
   font-size: 13px;
   line-height: 2.31;
   color: #444444;
 }
 
 .product-list__price {
+  margin: 0;
+
   font-size: 15px;
   font-weight: 700;
   line-height: 1.6;
+}
+
+@media (min-width: $tablet-width) {
+  .product-list {
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .product-list__item {
+    display: flex;
+    flex-wrap: wrap;
+    // flex-direction: column;
+  }
+
+  .product__list__item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-list {
+    // flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .product-list__item {
+    width: 315px;
+    min-height: 660px;
+  }
 }

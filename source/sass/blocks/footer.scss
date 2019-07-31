@@ -2,3 +2,28 @@
   font-family: "Open Sans", "Arial", sans-serif;
   background-color: #f1f1f1;
 }
+
+.footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    width: 668px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 58px;
+  }
+
+  .footer__logo {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__container {
+    width: 1050px;
+  }
+}

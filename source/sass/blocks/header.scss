@@ -1,4 +1,25 @@
-.header__logo {
-  display: block;
-  padding: 22px 0;
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 668px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__container {
+    width: 1050px;
+  }
 }
