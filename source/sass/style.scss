@@ -27,7 +27,11 @@ a {
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff2") format("woff2"),
+<<<<<<< HEAD
        url("../fonts/opensansbold.woff2") format("woff2");
+=======
+    url("../fonts/opensansbold.woff2") format("woff2");
+>>>>>>> 434006e88438eaf8e3107eaca683ed8ffc99a53a
 }
 
 @import "blocks/variables.scss";
