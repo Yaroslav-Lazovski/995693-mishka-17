@@ -4,6 +4,11 @@
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
+.reviews__container {
+  width: 260px;
+  margin: 0 auto;
+}
+
 .reviews__title {
   font-size: 25px;
   font-weight: 700;
@@ -27,4 +32,16 @@
   font-weight: 400;
   line-height: 1.76;
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__container {
+    width: 668px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__container {
+    width: 1050px;
+  }
 }
