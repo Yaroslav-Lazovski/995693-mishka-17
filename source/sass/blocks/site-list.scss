@@ -2,13 +2,6 @@
   display: block;
   padding-top: 27px;
   padding-bottom: 27px;
-<<<<<<< HEAD
-  padding-left: 35px;
-}
-
-.site-list__item--logo-tablet,
-.site-list__item--logo-desktop,
-=======
   padding-left: 76px;
 }
 
@@ -18,7 +11,6 @@
   text-align: center;
 }
 
->>>>>>> 434006e88438eaf8e3107eaca683ed8ffc99a53a
 .site-list__item--arrivals,
 .site-list__item--sale,
 .site-list__item--delivery {
@@ -33,17 +25,12 @@
     padding: 0;
   }
 
-<<<<<<< HEAD
-  .site-list__item--logo-tablet {
-    display: block;
-=======
   .site-list__item a {
     padding: 0;
   }
 
   .site-list__logo {
     padding-right: 210px;
->>>>>>> 434006e88438eaf8e3107eaca683ed8ffc99a53a
     order: -10;
   }
 
@@ -61,30 +48,12 @@
 }
 
 @media (min-width: $desktop-width) {
-<<<<<<< HEAD
-  .site-list__item--logo-tablet {
-    display: none;
-  }
-  
-=======
->>>>>>> 434006e88438eaf8e3107eaca683ed8ffc99a53a
-  .site-list__item--logo-desktop,
   .site-list__item--sale,
   .site-list__item--arrivals {
     display: block;
   }
 
   .site-list__item--catalog {
-<<<<<<< HEAD
-    order: -10  ;
-  }
-
-  .site-list__item--form {
-    order: -9;
-  }
-
-  .site-list__item--logo-desktop {
-=======
     padding-right: 71px;
 
     order: -10;
@@ -97,18 +66,14 @@
   }
 
   .site-list__logo {
->>>>>>> 434006e88438eaf8e3107eaca683ed8ffc99a53a
     order: -8;
   }
 
   .site-list__item--search {
     order: -7;
   }
-<<<<<<< HEAD
-=======
 
   .site-list__item--cart {
     order: -6;
   }
->>>>>>> 434006e88438eaf8e3107eaca683ed8ffc99a53a
 }

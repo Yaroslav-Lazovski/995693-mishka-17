@@ -3,17 +3,6 @@
   flex-direction: column;
 }
 
-<<<<<<< HEAD
-.header__logo {
-  display: block;
-  height: 80px;
-  padding: 22px 0;
-
-  text-align: center;
-}
-
-=======
->>>>>>> 434006e88438eaf8e3107eaca683ed8ffc99a53a
 @media (min-width: $tablet-width) {
   .header {
     flex-direction: row;
@@ -27,23 +16,9 @@
     width: 668px;
     margin: 0 auto;
   }
-<<<<<<< HEAD
-
-  .header__logo {
-    display: none;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .header__logo {
-    text-align: center;
-  }
-
-=======
-}
-
-@media (min-width: $desktop-width) {
->>>>>>> 434006e88438eaf8e3107eaca683ed8ffc99a53a
   .header__container {
     width: 1050px;
   }
