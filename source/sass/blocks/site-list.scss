@@ -1,3 +1,7 @@
+.site-list__item:not(.site-list__logo) {
+  border: 1px solid #ececec;
+}
+
 .site-list__item a {
   display: block;
   padding-top: 27px;
@@ -5,10 +9,76 @@
   padding-left: 76px;
 }
 
+.site-list__item a:hover {
+  opacity: 0.6;
+}
+
+.site-list__item a:active,
+.site-list__item a:focus {
+  opacity: 0.3;
+}
+
 .site-list__logo a {
+  padding-top: 22px;
   padding-left: 0;
 
   text-align: center;
+}
+
+.site-list__item--search {
+  position: relative;
+}
+
+.site-list__search-icon {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+
+  width: 18px;
+  height: 18px;
+
+  opacity: 0.2;
+}
+
+.site-list__search-icon:hover,
+.site-list__item--search svg:hover path{
+  opacity: 1;
+  fill: #63d1bb;
+}
+
+.site-list__search-icon:active,
+.site-list__item--search svg:active path,
+.site-list__search-icon:focus,
+.site-list__item--search svg:focus path {
+  fill: #d9f4ee;
+}
+
+.site-list__item--cart {
+  position: relative;
+}
+
+.site-list__cart-icon {
+  position: absolute;
+  top: 31px;
+  left: 30px;
+
+  width: 21px;
+  height: 18px;
+
+  opacity: 0.2;
+}
+
+.site-list__cart-icon:hover,
+.site-list__item--cart svg:hover path {
+  opacity: 1;
+  fill: #63d1bb;
+}
+
+.site-list__cart-icon:active,
+.site-list__item--cart svg:active path,
+.site-list__cart-icon:focus,
+.site-list__item--cart svg:focus path {
+  fill: #d9f4ee;
 }
 
 .site-list__item--arrivals,
@@ -23,6 +93,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
+  }
+
+  .site-list__item:not(.site-list__logo) {
+    border: none;
   }
 
   .site-list__item a {
