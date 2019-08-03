@@ -58,10 +58,24 @@
   background-image: url("../../img/icon-menu-close.svg");
 }
 
+@media (max-width: $mobile-width-only) {
+  .nav--closed .site-list__item:not(.site-list__logo) {
+    display: none;
+  }
+
+  .nav--nojs .nav__burger {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .nav {
     width: auto;
     margin: 0;
+  }
+
+  .nav__burger {
+    display: none;
   }
 
   .nav__list {
