@@ -20,6 +20,7 @@
 
 .site-list__logo a {
   padding-top: 22px;
+  padding-bottom: 22px;
   padding-left: 0;
 
   text-align: center;
@@ -205,7 +206,7 @@
     font-weight: 700;
     line-height: 1.41;
   }
-  
+
   .site-list__logo {
     display: flex;
     justify-content: center;
@@ -224,7 +225,7 @@
     order: -6;
   }
 
-  .site-list__item--arrivals, 
+  .site-list__item--arrivals,
   .site-list__item--sale {
     display: block;
     padding-top: 22px;
@@ -235,6 +236,7 @@
     font-stretch: normal;
     line-height: 1.6;
   }
+
   .site-list__item--arrivals {
     width: 175px;
     margin-right: 45px;
