@@ -46,6 +46,7 @@ a {
     url("../fonts/opensansbold.woff2") format("woff2");
 }
 
+@import "normalize.scss";
 @import "blocks/variables.scss";
 @import "blocks/btn.scss";
 @import "blocks/header.scss";

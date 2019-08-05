@@ -42,7 +42,7 @@
   height: 14px;
 
   background-color: #ffffff;
-  background-image: url("../../img/icon-menu-open.svg");
+  background-image: url("../img/icon-menu-open.svg");
 }
 
 .nav--opened .nav__burger::after {
@@ -55,7 +55,7 @@
   height: 20px;
 
   background-color: #ffffff;
-  background-image: url("../../img/icon-menu-close.svg");
+  background-image: url("../img/icon-menu-close.svg");
 }
 
 @media (max-width: $mobile-width-only) {
