@@ -41,34 +41,77 @@
 
 .goods__item {
   min-height: 103px;
-  padding-top: 27px;
-  padding-left: 25px;
-  padding-bottom: 27px;
 
   &--interior {
-    padding-right: 185px;
-
     background-color: #63d1bb;
   }
 
   &--toys {
-    padding-right: 202px;
-
     background-color: #56c3b2;
   }
 }
 
 .goods__item a {
+  position: relative;
+
+  display: block;
+  padding-top: 27px;
+  padding-left: 29px;
+  padding-bottom: 27px;
+
   color: #ffffff;
 }
 
+.goods__item--interior a {
+  padding-right: 185px;
+}
+
+.goods__item--interior a::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  right: 36px;
+
+  width: 40px;
+  height: 62px;
+
+  background: url("../img/icon-interior.svg") no-repeat 0 0;
+  opacity: 0.5;
+}
+
+.goods__item--toys a {
+  padding-right: 202px;
+}
+
+.goods__item--toys a::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  right: 27px;
+
+  width: 60px;
+  height: 60px;
+
+  background: url("../img/icon-toy.svg") no-repeat 0 0;
+  opacity: 0.5;
+}
+
 @media (min-width: $tablet-width) {
+  .goods {
+    margin-top: -45px;
+
+    border-top: 1px solid #ececec;
+  }
+
   .goods__container {
     width: 668px;
+    min-height: 746px;
     margin: 0 auto;
   }
 
   .goods__title {
+    padding-top: 155px;
+
     font-size: 43px;
     font-weight: bold;
     line-height: 1.16;
@@ -76,14 +119,30 @@
 
   .goods__list {
     display: flex;
+
+    font-size: 20px;
+    line-height: 1.5;
   }
 
   .goods__item {
     flex-grow: 1;
     min-height: 120px;
+  }
+
+  .goods__item a {
     padding-top: 30px;
-    padding-left: 27px;
+    padding-left: 30px;
     padding-bottom: 30px;
+  }
+
+  .goods__item--interior a::before {
+    top: 30px;
+    right: 36px;
+  }
+
+  .goods__item--toys a::before {
+    top: 31px;
+    right: 34px;
   }
 }
 
@@ -92,7 +151,35 @@
     width: 1050px;
   }
 
+  .goods__title {
+    padding-right: 223px;
+    padding-left: 223px;
+
+    font-size: 53px;
+    line-height: 1.08;
+  }
+
   .goods__item {
+    width: 525px;
     min-height: 120px;
+
+    &--interior a {
+      padding-right: 377px;
+    }
+
+    &--toys a {
+      padding-right: 395px;
+    }
+  }
+
+  .goods__item a {
+    padding-top: 30px;
+    padding-left: 32px;
+    padding-bottom: 30px;
+  }
+
+  .goods__item--toys a::before {
+    top: 32px;
+    right: 35px;
   }
 }
