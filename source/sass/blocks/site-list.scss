@@ -113,6 +113,10 @@
     border-right: 1px solid #ececec;
   }
 
+  .site-list__logo img {
+    width: 112px;
+  }
+
   .site-list__item--search {
     order: -9;
     font-size: 0;
@@ -211,6 +215,10 @@
     display: flex;
     justify-content: center;
     order: -8;
+  }
+
+  .site-list__logo img {
+    width: 149px;
   }
 
   .site-list__item--search {
