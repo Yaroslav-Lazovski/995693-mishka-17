@@ -51,8 +51,37 @@
     background-color: #63d1bb;
   }
 
+  &--interior:hover {
+    margin-top: -5px;
+
+    background-color: #59d5bc;
+  }
+
   &--toys {
     background-color: #56c3b2;
+  }
+  
+  &--toys:hover {
+    margin-top: -5px;
+
+    background-color: #46c1ae;
+  }
+
+  &--interior:hover .goods__item--interior-icon,
+  &--toys:hover .goods__item--toys-icon {
+    opacity: 1;
+  }
+
+  // &--interior a:hover,
+  // &--toys a:hover {
+  //   padding-bottom: 32px;
+  // }
+
+  &--interior a:active ,
+  &--toys a:active ,
+  &--interior a:focus ,
+  &--toys a:focus  {
+    opacity: 0.3;
   }
 }
 
@@ -71,8 +100,7 @@
   padding-right: 185px;
 }
 
-.goods__item--interior a::before {
-  content: "";
+.goods__item--interior-icon {
   position: absolute;
   top: 23px;
   right: 36px;
@@ -80,16 +108,15 @@
   width: 40px;
   height: 62px;
 
-  background: url("../img/icon-interior.svg") no-repeat 0 0;
+  fill: #149080;
   opacity: 0.5;
 }
 
 .goods__item--toys a {
-  padding-right: 202px;
+  padding-right: 224px;
 }
 
-.goods__item--toys a::before {
-  content: "";
+.goods__item--toys-icon {
   position: absolute;
   top: 21px;
   right: 27px;
@@ -97,7 +124,7 @@
   width: 60px;
   height: 60px;
 
-  background: url("../img/icon-toy.svg") no-repeat 0 0;
+  fill: #149080;
   opacity: 0.5;
 }
 
@@ -139,22 +166,22 @@
   .goods__item {
     flex-grow: 1;
     min-height: 120px;
+
+    &--interior-icon {
+      top: 30px;
+      right: 36px;
+    }
+
+    &--toys-icon {
+      top: 31px;
+      right: 34px;
+    }
   }
 
   .goods__item a {
     padding-top: 30px;
     padding-left: 30px;
     padding-bottom: 30px;
-  }
-
-  .goods__item--interior a::before {
-    top: 30px;
-    right: 36px;
-  }
-
-  .goods__item--toys a::before {
-    top: 31px;
-    right: 34px;
   }
 }
 
@@ -193,16 +220,16 @@
     &--toys a {
       padding-right: 395px;
     }
+
+    &--toys-icon {
+      top: 32px;
+      right: 35px;
+    }
   }
 
   .goods__item a {
     padding-top: 30px;
     padding-left: 32px;
     padding-bottom: 30px;
-  }
-
-  .goods__item--toys a::before {
-    top: 32px;
-    right: 35px;
   }
 }
