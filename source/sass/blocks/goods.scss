@@ -60,7 +60,7 @@
   &--toys {
     background-color: #56c3b2;
   }
-  
+
   &--toys:hover {
     margin-top: -5px;
 
@@ -72,15 +72,10 @@
     opacity: 1;
   }
 
-  // &--interior a:hover,
-  // &--toys a:hover {
-  //   padding-bottom: 32px;
-  // }
-
-  &--interior a:active ,
-  &--toys a:active ,
-  &--interior a:focus ,
-  &--toys a:focus  {
+  &--interior a:active,
+  &--toys a:active,
+  &--interior a:focus,
+  &--toys a:focus {
     opacity: 0.3;
   }
 }
