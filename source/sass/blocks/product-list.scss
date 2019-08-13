@@ -10,16 +10,17 @@
   width: 260px;
   min-height: 375px;
   margin-bottom: 30px;
-
-  &:hover .product-list__item-wrapper {
-    box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
-  }
-
-  &:active .product-list__item-wrapper,
-  &:focus .product-list__item-wrapper {
-    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
-  }
 }
+
+.product-list__item:hover .product-list__item-wrapper {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.product-list__item:active .product-list__item-wrapper,
+.product-list__item:focus .product-list__item-wrapper {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
 
 .product-list__item-wrapper {
   position: relative;
