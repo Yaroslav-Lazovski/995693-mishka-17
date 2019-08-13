@@ -30,12 +30,27 @@
 
 @media (min-width: $tablet-width) {
   .catalog__container {
+    position: relative;
+
     width: 668px;
     margin: 0 auto;
-    margin-top: 67px;
+    margin-top: 79px;
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: -103px;
+    //   left: -41px;
+
+    //   width: 668px;
+    //   height: 24px;
+
+    //   background: url("../img/bg-zigzag-fill.svg") no-repeat 0 0;
+    // }
   }
 
   .catalog__intro {
+
     min-height: 226px;
     margin-top: -46px;
   }

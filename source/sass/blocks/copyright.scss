@@ -4,7 +4,30 @@
 }
 
 .copyright__text {
+  margin: 0;
+  padding-top: 28px;
+  padding-right: 30px;
+  padding-bottom: 28px;
+
   font-size: 19px;
   font-weight: 700;
   line-height: 0.95;
+}
+
+.copyright__link {
+  padding-top: 22px;
+}
+
+.copyright__link-logo-academy-icon {
+  fill: #63d1bb;
+}
+
+.copyright__link:hover .copyright__link-logo-academy-icon {
+  fill: #46c1ae;
+}
+
+.copyright__link:active .copyright__link-logo-academy-icon,
+.copyright__link:focus .copyright__link-logo-academy-icon {
+  fill: #46c1ae;
+  opacity: 0.3;
 }
