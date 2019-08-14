@@ -80,15 +80,15 @@
 }
 
 .production__play:hover {
-  width: calc(101px + 101px*0.2);
-  height: calc(77px + 77px*0.2);
+  width: calc(101px + 101px * 0.2);
+  height: calc(77px + 77px * 0.2);
   top: calc(50% - 46px);
 }
 
 .production__play:active,
 .production__play:focus {
-  width: calc(101px - 101px*0.2);
-  height: calc(77px - 77px*0.2);
+  width: calc(101px - 101px * 0.2);
+  height: calc(77px - 77px * 0.2);
   top: calc(50% - 36px);
 
   opacity: 0.3;
