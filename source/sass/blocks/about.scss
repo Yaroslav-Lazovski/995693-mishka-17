@@ -34,6 +34,10 @@
 
   margin-bottom: 80px;
 
+  &--box {
+    margin-bottom: 0;
+  }
+
   &--eco::before {
     content: "";
     position: absolute;

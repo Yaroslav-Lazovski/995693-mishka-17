@@ -1,18 +1,29 @@
 .production {
   display: flex;
   flex-direction: column;
-  width: 260px;
-  min-height: 500px;
-  margin: 0 auto;
+  margin-bottom: 58px;
 
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
-// .production__container {
+.production__container {
+  width: 260px;
+  min-height: 500px;
+  margin: 0 auto;
+}
 
-// }
+.production__container:hover .production__content {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.production__container:active .production__content,
+.production__container:focus .production__content {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
 
 .production__tittle {
+  position: relative;
+
   margin: 0;
   padding-top: 25px;
   padding-left: 90px;
@@ -26,16 +37,79 @@
   border-bottom: none;
 }
 
+.production__tittle::before {
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 24px;
+
+  width: 32px;
+  height: 32px;
+
+  background: url("../img/icon-video.svg") no-repeat 0 0;
+}
+
+.production__video {
+  position: relative;
+
+  width: 260px;
+  min-height: 150px;
+}
+
+.production__video .production-image {
+  width: 100%;
+  height: 100%;
+}
+
+.production__play {
+  position: absolute;
+
+  top: calc(50% - 38px);
+  left: 0;
+  right: 0;
+
+  width: 101px;
+  height: 77px;
+  margin: 0 auto;
+
+  cursor: pointer;
+
+  background: url("../img/icon-play.svg") no-repeat 0 0;
+  background-size: cover;
+  border: none;
+}
+
+.production__play:hover {
+  width: calc(101px + 101px*0.2);
+  height: calc(77px + 77px*0.2);
+  top: calc(50% - 46px);
+}
+
+.production__play:active,
+.production__play:focus {
+  width: calc(101px - 101px*0.2);
+  height: calc(77px - 77px*0.2);
+  top: calc(50% - 36px);
+
+  opacity: 0.3;
+}
+
 .production__content {
+  margin-top: -4px;
+
   border: solid 1px #ececec;
   border-top: none;
 }
 
+.production__content-tittle {
+  display: none;
+}
+
 .production__text {
   margin: 0;
-  padding-top: 30px;
+  padding-top: 27px;
   padding-right: 40px;
-  padding-bottom: 26px;
+  padding-bottom: 25px;
   padding-left: 34px;
 
   font-size: 13px;
@@ -47,6 +121,7 @@
   width: 192px;
   min-height: 52px;
   margin-left: 34px;
+  margin-bottom: 33px;
   padding: 16px 0;
 
   font-size: 17px;
@@ -54,6 +129,118 @@
   line-height: 0.94;
   text-transform: uppercase;
   text-align: center;
+  color: #444444;
 
   border: 2px solid #444444;
+}
+
+.production__order:hover {
+  color: #ffffff;
+
+  background-color: #444444;
+}
+
+.production__order:active,
+.production__order:focus {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .production__container {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+    min-height: 742px;
+  }
+
+  .production__tittle {
+    display: none;
+  }
+
+  .production__video {
+    width: 668px;
+    min-height: 455px;
+  }
+
+  .production__content {
+    position: relative;
+  }
+
+  .production__content::before {
+    position: absolute;
+    content: "";
+    top: 34px;
+    left: 42px;
+
+    width: 32px;
+    height: 32px;
+
+    background: url("../img/icon-video.svg") no-repeat 0 0;
+  }
+
+  .production__content-tittle {
+    display: block;
+    margin: 0;
+    padding-top: 40px;
+    padding-left: 107px;
+
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .production__text {
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  .production__order {
+    width: 584px;
+    margin-bottom: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1050px;
+    min-height: 455px;
+  }
+
+  .production__video {
+    width: 682px;
+  }
+
+  .production__content {
+    width: 367px;
+    min-height: 455px;
+    margin-top: 0;
+
+    border-top: solid 1px #ececec;
+  }
+
+  .production__content::before {
+    top: 47px;
+    left: 80px;
+  }
+
+  .production__content-tittle {
+    padding-top: 97px;
+    padding-left: 79px;
+    padding-right: 140px;
+  }
+
+  .production__text {
+    padding-top: 36px;
+    padding-left: 78px;
+    padding-bottom: 48px;
+  }
+
+  .production__order {
+    width: 230px;
+    margin-left: 80px;
+  }
 }
