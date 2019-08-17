@@ -218,22 +218,25 @@
       </section>
       <section class="contacts">
         <div class="contacts__container">
-          <h2 class="contacts__title">Контакты</h2>
-          <table class="contacts__properties">
-            <tr>
-              <td class="contacts__attribute">e-mail:</td>
-              <td class="contacts__value">info@mimimishkashop.ru</td>
-            </tr>
-            <tr>
-              <td class="contacts__attribute">адрес:</td>
-              <td class="contacts__value">г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101</td>
-            </tr>
-          </table>
-          <a class="contacts__feedback-container" href="feedback.html">Напишите нам</a>
+          <div class="contacts__wrapper">
+            <h2 class="contacts__title">Контакты</h2>
+            <table class="contacts__properties">
+              <tr class="contacts__mail">
+                <td class="contacts__attribute">e-mail:</td>
+                <td class="contacts__value contacts__value--mailbox">info@mimimishkashop.ru</td>
+              </tr>
+              <tr>
+                <td class="contacts__attribute contacts__attribute--address">адрес:</td>
+                <td class="contacts__value contacts__value--place">г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101</td>
+              </tr>
+            </table>
+            <a class="contacts__feedback-container btn" href="feedback.html">Напишите нам</a>
+          </div>
+          <iframe class="contacts__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sil!4v1565992105137!5m2!1sru!2sil"
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+          </iframe>
         </div>
-        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CGr2nN4-" width="560" height="400" frameborder="1"
-          allowfullscreen="true">
-        </iframe>
         <a class="contacts__feedback btn" href="feedback.html">Напишите нам</a>
       </section>
     </main>
@@ -300,6 +303,24 @@
         </div>
       </div>
     </footer>
+    <section class="modal-cart">
+      <div class="modal__container">
+        <h3 class="modal__tittle">Добавить в&nbsp;корзину</h3>
+        <p class="modal__text">Выберите размер:</p>
+        <ul class="modal__list">
+          <li class="modal__list-item">
+            <button class="modal__size modal__size--active">S</button>
+          </li>
+          <li class="modal__list-item">
+            <button class="modal__size">M</button>
+          </li>
+          <li class="modal__list-item">
+            <button class="modal__size modal__size--l">L</button>
+          </li>
+        </ul>
+        <a href="#" class="modal__add">Добавить</a>
+      </div>
+    </section>
     <script src="js/script.js"></script>
   </body>
 </html>

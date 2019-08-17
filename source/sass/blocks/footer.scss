@@ -30,6 +30,7 @@
 @media (min-width: $tablet-width) {
   .footer {
     min-height: 143px;
+    margin-top: 57px;
   }
 
   .footer__container {
@@ -58,6 +59,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .footer {
+    margin-top: 105px;
+  }
+
   .footer__container {
     width: 1050px;
   }

@@ -35,18 +35,19 @@
     width: 668px;
     margin: 0 auto;
     margin-top: 79px;
+  }
 
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   top: -103px;
-    //   left: -41px;
+  .catalog__container::before {
+    position: absolute;
+    content: "";
+    top: -89px;
+    left: -50px;
 
-    //   width: 668px;
-    //   height: 24px;
+    width: 769px;
+    height: 24px;
 
-    //   background: url("../img/bg-zigzag-fill.svg") no-repeat 0 0;
-    // }
+    background: url("../img/bg-zigzag-fill.svg") no-repeat 0 0;
+    background-size: 769px 24px;
   }
 
   .catalog__intro {
@@ -66,6 +67,19 @@
 @media (min-width: $desktop-width) {
   .catalog__container {
     width: 1050px;
+  }
+
+  .catalog__container::before {
+    position: absolute;
+    content: "";
+    top: -93px;
+    left: -50px;
+
+    width: 1150px;
+    height: 34px;
+
+    background: url("../img/bg-zigzag-fill.svg") no-repeat 0 0;
+    background-size: 1150px 34px;
   }
 
   .catalog__intro {
