@@ -1,21 +1,62 @@
+.modal {
+  position: fixed;
+
+  display: none;
+}
+
 .modal-cart {
-  // display: none;
+  top: 50%;
+  left: 50%;
+
   width: 320px;
   min-height: 336px;
   margin: 0 auto;
+  margin-top: -168px;
+  margin-left: -160px;
 
   font-family: "Open Sans", "Arial", sans-serif;
 
+  background-color: #ffffff;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   border: 1px solid  #c6c6c6;
+
+  z-index: 2000;
 }
 
-.modal__container {
+.modal-cart-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-cart-opacity {
+  opacity: 0.9;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modal-cart__container {
   width: 260px;
   margin: 0 auto;
 }
 
-.modal__tittle {
+.modal-cart__tittle {
   margin: 0;
   margin-top: 30px;
 
@@ -25,7 +66,7 @@
   text-align: center;
 }
 
-.modal__text {
+.modal-cart__text {
   margin: 0;
   padding-top: 12px;
 
@@ -34,7 +75,7 @@
   text-align: center;
 }
 
-.modal__list {
+.modal-cart__list {
   display: flex;
   margin: 0;
   padding: 0;
@@ -43,7 +84,7 @@
   list-style: none;
 }
 
-.modal__size {
+.modal-cart__size {
   width: 82px;
   min-height: 52px;
   margin-right: 7px;
@@ -67,16 +108,16 @@
   }
 }
 
-.modal__size:hover {
+.modal-cart__size:hover {
   border-color: #c7c7c7;
 }
 
-.modal__size:active,
-.modal__size:focus {
+.modal-cart__size:active,
+.modal-cart__size:focus {
   border-color: #62d1ba;
 }
 
-.modal__add {
+.modal-cart__add {
   display: block;
   width: 260px;
   min-height: 52px;
@@ -97,32 +138,32 @@
 @media (min-width: $tablet-width) {
   .modal-cart {
     width: 556px;
-    min-height: 336px;
+    margin-left: -278px;
   }
 
-  .modal__container {
+  .modal-cart__container {
     width: 350px;
   }
 
-  .modal__tittle {
+  .modal-cart__tittle {
     margin-top: 35px;
 
     font-size: 30px;
     line-height: 1.9;
   }
 
-  .modal__text {
+  .modal-cart__text {
     padding-top: 10px;
 
     font-size: 17px;
     line-height: 1.76;
   }
 
-  .modal__size {
+  .modal-cart__size {
     width: 112px;
   }
 
-  .modal__add {
+  .modal-cart__add {
     width: 350px;
   }
 }

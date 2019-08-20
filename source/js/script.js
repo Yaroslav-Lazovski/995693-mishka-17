@@ -12,3 +12,75 @@ navBurger.addEventListener('click', function () {
     nav.classList.remove('nav--opened');
   }
 });
+
+var linkBuy = document.querySelector(".popular__buy");
+var popupCart = document.querySelector(".modal-cart");
+var popupOverlay = document.querySelector(".modal-overlay");
+
+if (linkBuy) {
+  linkBuy.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popupCart.classList.add("modal-cart-show");
+    popupOverlay.classList.add("modal-overlay-show");
+  });
+
+  popupOverlay.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    if (popupCart.classList.contains("modal-cart-show")) {
+      popupCart.classList.remove("modal-cart-show");
+    }
+
+    if (popupOverlay.classList.contains("modal-overlay-show")) {
+      popupOverlay.classList.remove("modal-overlay-show");
+    }
+  });
+
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (popupCart.classList.contains("modal-cart-show")) {
+          popupCart.classList.remove("modal-cart-show");
+        }
+
+        if (popupOverlay.classList.contains("modal-overlay-show")) {
+          popupOverlay.classList.remove("modal-overlay-show");
+        }
+      }
+    });
+}
+
+var linkCart = document.querySelectorAll(".product-list__cart");
+
+if (linkCart) {
+  for (var i = 0; i < linkCart.length; i++) {
+    linkCart[i].onclick = function (evt) {
+      evt.preventDefault();
+      popupCart.classList.add("modal-cart-show");
+      popupOverlay.classList.add("modal-overlay-show");
+    };
+
+    popupOverlay.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      if (popupCart.classList.contains("modal-cart-show")) {
+        popupCart.classList.remove("modal-cart-show");
+      }
+
+      if (popupOverlay.classList.contains("modal-overlay-show")) {
+        popupOverlay.classList.remove("modal-overlay-show");
+      }
+    });
+
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (popupCart.classList.contains("modal-cart-show")) {
+          popupCart.classList.remove("modal-cart-show");
+        }
+
+        if (popupOverlay.classList.contains("modal-overlay-show")) {
+          popupOverlay.classList.remove("modal-overlay-show");
+        }
+      }
+    });
+  }
+}

@@ -134,8 +134,8 @@
                 <p class="product-list__properties">Рост 30 см, вес 200 г</p>
                 <p class="product-list__price product-list__price--hare">
                   1 200 руб.
-                  <a href="cart.html">
-                    <svg class="product-list-icon-cart" width="20" height="19">
+                  <a class="product-list__cart" href="cart.html">
+                    <svg class="product-list__cart-icon" width="20" height="19">
                       <use xlink:href="#icon-cart"></use>
                     </svg>
                   </a>
@@ -159,8 +159,8 @@
                 <p class="product-list__properties">Диаметр 15 см, высота 10 см</p>
                 <p class="product-list__price product-list__price--box">
                   690 руб.
-                  <a href="cart.html">
-                    <svg class="product-list-icon-cart" width="20" height="19">
+                  <a class="product-list__cart" href="cart.html">
+                    <svg class="product-list__cart-icon" width="20" height="19">
                       <use xlink:href="#icon-cart"></use>
                     </svg>
                   </a>
@@ -184,8 +184,8 @@
                 <p class="product-list__properties">Диаметр 30 см, высота 30 см</p>
                 <p class="product-list__price product-list__price--box-toys">
                   1 500 руб.
-                  <a href="cart.html">
-                    <svg class="product-list-icon-cart" width="20" height="19">
+                  <a class="product-list__cart"href="cart.html">
+                    <svg class="product-list__cart-icon" width="20" height="19">
                       <use xlink:href="#icon-cart"></use>
                     </svg>
                   </a>
@@ -282,6 +282,25 @@
         </div>
       </div>
     </footer>
+    <section class="modal modal-cart">
+      <div class="modal-cart__container">
+        <h3 class="modal-cart__tittle">Добавить в&nbsp;корзину</h3>
+        <p class="modal-cart__text">Выберите размер:</p>
+        <ul class="modal-cart__list">
+          <li class="modal-cart__list-item">
+            <button class="modal-cart__size modal-cart__size--active">S</button>
+          </li>
+          <li class="modal-cart__list-item">
+            <button class="modal-cart__size">M</button>
+          </li>
+          <li class="modal-cart__list-item">
+            <button class="modal-cart__size modal-cart__size--l">L</button>
+          </li>
+        </ul>
+        <a href="#" class="modal-cart__add">Добавить</a>
+      </div>
+    </section>
+    <div class="modal-overlay"></div>
     <script src="js/script.js"></script>
   </body>
 </html>
