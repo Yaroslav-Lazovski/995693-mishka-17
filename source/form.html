@@ -103,6 +103,95 @@
       </div>
     </header>
     <main class="main">
+      <section class="form-intro">
+        <h1 class="form-intro__tittle">Вязание на заказ</h1>
+        <div class="form-intro__container">
+          <p class="form-intro__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
+          детали.</p>
+        </div>
+      </section>
+      <section class="form">
+        <div class="form__container">
+          <form action="#" class="filter" method="post">
+            <fieldset class="form-type">
+              <legend class="form-type__tittle">Тип</legend>
+              <ul class="form-type__list">
+                <li class="form-type__list-item">
+                  <input class="visually-hidden form-type__list-radio" type="radio" name="product-group" id="filter-accessories" value="accessories"
+                  checked>
+                  <label class="form-type__label" for="filter-accessories">Аксессуар для интерьера</label>
+                </li>
+                <li class="form-type__list-item form-type__list-item--toy">
+                  <input class="visually-hidden form-type__list-radio" type="radio" name="product-group" id="filter-toys" value="toys">
+                  <label class="form-type__label" for="filter-toys">Детская игрушка</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form-color">
+              <legend>Цвет</legend>
+              <ul class="form-color__list">
+                <li>
+                  <input class="" type="checkbox" name="white" id="filter-white" checked>
+                  <label for="filter-white">Белый</label>
+                </li>
+                <li>
+                  <input class="" type="checkbox" name="tiffany" id="filter-tiffany">
+                  <label for="filter-tiffany">«Тиффани»</label>
+                </li>
+                <li>
+                  <input class="" type="checkbox" name="pink" id="filter-pink">
+                  <label for="filter-pink">Розовый</label>
+                </li>
+                <li>
+                  <input class="" type="checkbox" name="grey" id="filter-grey" checked>
+                  <label for="filter-grey">Серый</label>
+                </li>
+                <li>
+                  <input class="" type="checkbox" name="black" id="filter-black">
+                  <label for="filter-black">Черный</label>
+                </li>
+                <li>
+                  <input class="" type="checkbox" name="orange" id="filter-orange">
+                  <label for="filter-orange">Оранжевый</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form-client">
+              <legend>Фио</legend>
+              <ul class="form-client__list">
+                <li>
+                  <label for="">Имя:</label>
+                  <input type="text" name="name" id="field-name">
+                </li>
+                <li>
+                  <label for="field-surname">Фамилия:</label>
+                  <input type="text" name="name" id="field-surname">
+                </li>
+                <li>
+                  <label for="field-surname">Отчество:</label>
+                  <input type="text" name="name" id="father-name">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form-tel">
+              <legend>Тел</legend>
+                <input type="tel" name="tel" id="field-tel">
+            </fieldset>
+            <fieldset class="form__mail">
+              <legend>E-mail</legend>
+              <input type="email" name="tel" id="field-mail">
+            </fieldset>
+            <fieldset class="form-comment">
+              <legend>Доп</legend>
+              <textarea name="comment" id="field-comment" rows="10">Опишите все ваши пожелания к заказу</textarea>
+            </fieldset>
+            <div class="form-send">
+              <p class="form-send__text">*Поля обязательны для заполнения</p>
+              <button class="form-send__button btn" type="submit">Отправить заказ</button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__container">

@@ -8,7 +8,9 @@ html {
   box-sizing: inherit;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -65,3 +67,6 @@ a {
 @import "blocks/copyright.scss";
 @import "blocks/modal-cart.scss";
 @import "blocks/modal-overlay.scss";
+@import "blocks/form.scss";
+@import "blocks/form-intro.scss";
+@import "blocks/form-type.scss";

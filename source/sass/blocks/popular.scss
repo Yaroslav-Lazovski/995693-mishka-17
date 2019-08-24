@@ -5,6 +5,8 @@
 }
 
 .popular__container {
+  position: relative;
+
   width: 260px;
   margin: 0 auto;
 }
@@ -40,7 +42,7 @@
 }
 
 .popular__properties {
-  margin-top: 15px;
+  margin-top: 13px;
   padding-bottom: 28px;
 
   font-size: 15px;
@@ -71,10 +73,6 @@
   padding-right: 31px;
 }
 
-.popular__order-content {
-  display: none;
-}
-
 .popular__price {
   margin: 0;
   padding-top: 22px;
@@ -91,7 +89,7 @@
 
   display: block;
   width: 260px;
-  margin-top: 25px;
+  margin-top: 22px;
 }
 
 .popular__buy::before {
@@ -126,7 +124,7 @@
   }
 
   .popular__wrapper-content {
-    margin-top: 43px;
+    margin-top: 50px;
   }
 
   .popular__title {
@@ -154,11 +152,22 @@
   }
 
   .popular__properties {
+    margin-top: 35px;
     padding-bottom: 0;
   }
 
   .popular__attribute::after {
     width: 291px;
+  }
+
+  .popular__photo {
+    position: absolute;
+    top: 105px;
+    right: 44px;
+
+
+    width: 333px;
+    height: 404px;
   }
 
   .popular__image {
@@ -168,12 +177,7 @@
   }
 
   .popular__order {
-    display: none;
-  }
-
-  .popular__order-content {
-    display: block;
-    margin-top: 60px;
+    margin-top: 55px;
   }
 
   .popular__price {
@@ -220,7 +224,7 @@
     width: 1050px;
     margin-left: 43px;
 
-    z-index: 100;
+    z-index: 1000;
   }
 
   .popular__wrapper-content {
@@ -243,7 +247,15 @@
   }
 
   .popular__properties {
-    margin-top: 45px;
+    margin-top: 48px;
+  }
+
+  .popular__photo {
+    top: 71px;
+    right: 0;
+
+    width: 525px;
+    height: 636px;
   }
 
   .popular__image {
@@ -254,8 +266,8 @@
     width: 525px;
   }
 
-  .popular__order-content {
-    margin-top: 108px;
+  .popular__order {
+    margin-top: 106px;
   }
 
   .popular__buy::before {
