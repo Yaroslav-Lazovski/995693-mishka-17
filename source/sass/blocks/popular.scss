@@ -11,6 +11,19 @@
   margin: 0 auto;
 }
 
+.popular__container::before {
+  position: absolute;
+  content: "";
+  bottom: -42px;
+  left: -30px;
+
+  width: 320px;
+  height: 6px;
+
+  background: url("../img/bg-zigzag-line.svg") no-repeat 0 0;
+  background-size: 320px 6px;
+}
+
 .popular__title {
   margin: 0;
   padding-top: 30px;
@@ -85,24 +98,9 @@
 }
 
 .popular__buy {
-  position: relative;
-
   display: block;
   width: 260px;
   margin-top: 22px;
-}
-
-.popular__buy::before {
-  position: absolute;
-  content: "";
-  bottom: -42px;
-  left: -30px;
-
-  width: 320px;
-  height: 6px;
-
-  background: url("../img/bg-zigzag-line.svg") no-repeat 0 0;
-  background-size: 320px 6px;
 }
 
 @media (min-width: $tablet-width) {
@@ -115,6 +113,16 @@
     flex-wrap: wrap;
     width: 668px;
     margin: 0 auto;
+  }
+
+  .popular__container::before {
+    bottom: -68px;
+    left: -60px;
+
+    width: 770px;
+    height: 15px;
+
+    background-size: 770px 15px;
   }
 
   .popular__wrapper-titles {
@@ -194,16 +202,6 @@
 
     text-align: center;
   }
-
-  .popular__buy::before {
-    bottom: -68px;
-    left: -60px;
-
-    width: 770px;
-    height: 15px;
-
-    background-size: 770px 15px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -216,6 +214,16 @@
 
     width: 1050px;
     margin: 0 auto;
+  }
+
+  .popular__container::before {
+    bottom: -96px;
+    left: -0;
+
+    width: 1050px;
+    height: 23px;
+
+    background-size: 1050px 23px;
   }
 
   .popular__wrapper-titles {
@@ -268,15 +276,5 @@
 
   .popular__order {
     margin-top: 106px;
-  }
-
-  .popular__buy::before {
-    bottom: -96px;
-    left: -175px;
-
-    width: 1050px;
-    height: 23px;
-
-    background-size: 1050px 23px;
   }
 }
