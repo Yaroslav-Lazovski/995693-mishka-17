@@ -37,9 +37,9 @@
     padding-top: 5px;
   }
 
-  &:hover .social__list-insta-icon,
-  &:hover .social__list-facebook-icon,
-  &:hover .social__list-twitter-icon {
+  &:hover .social__list-insta-icon path,
+  &:hover .social__list-facebook-icon path,
+  &:hover .social__list-twitter-icon path {
     fill: #46c1ae;
   }
 
