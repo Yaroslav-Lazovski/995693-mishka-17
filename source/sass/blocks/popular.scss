@@ -1,12 +1,27 @@
 .popular {
-  margin-bottom: 36px;
+  margin-bottom: 40px;
 
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .popular__container {
+  position: relative;
+
   width: 260px;
   margin: 0 auto;
+}
+
+.popular__container::before {
+  position: absolute;
+  content: "";
+  bottom: -42px;
+  left: -30px;
+
+  width: 320px;
+  height: 6px;
+
+  background: url("../img/bg-zigzag-line.svg") no-repeat 0 0;
+  background-size: 320px 6px;
 }
 
 .popular__title {
@@ -40,7 +55,7 @@
 }
 
 .popular__properties {
-  margin-top: 30px;
+  margin-top: 13px;
   padding-bottom: 28px;
 
   font-size: 15px;
@@ -58,7 +73,7 @@
 .popular__attribute::after {
   content: "";
   position: absolute;
-  top: 38px;
+  top: 40px;
   left: 0;
 
   width: 260px;
@@ -71,13 +86,9 @@
   padding-right: 31px;
 }
 
-.popular__order-content {
-  display: none;
-}
-
 .popular__price {
   margin: 0;
-  padding-top: 25px;
+  padding-top: 22px;
 
   font-size: 17px;
   font-weight: 700;
@@ -89,15 +100,29 @@
 .popular__buy {
   display: block;
   width: 260px;
-  margin-top: 25px;
+  margin-top: 22px;
 }
 
 @media (min-width: $tablet-width) {
+  .popular {
+    margin-bottom: 63px;
+  }
+
   .popular__container {
     display: flex;
     flex-wrap: wrap;
     width: 668px;
     margin: 0 auto;
+  }
+
+  .popular__container::before {
+    bottom: -68px;
+    left: -60px;
+
+    width: 770px;
+    height: 15px;
+
+    background-size: 770px 15px;
   }
 
   .popular__wrapper-titles {
@@ -107,11 +132,11 @@
   }
 
   .popular__wrapper-content {
-    margin-top: 43px;
+    margin-top: 50px;
   }
 
   .popular__title {
-    padding-top: 40px;
+    padding-top: 47px;
 
     font-size: 43px;
     line-height: 1.16;
@@ -135,11 +160,22 @@
   }
 
   .popular__properties {
+    margin-top: 35px;
     padding-bottom: 0;
   }
 
   .popular__attribute::after {
     width: 291px;
+  }
+
+  .popular__photo {
+    position: absolute;
+    top: 105px;
+    right: 44px;
+
+
+    width: 333px;
+    height: 404px;
   }
 
   .popular__image {
@@ -149,12 +185,7 @@
   }
 
   .popular__order {
-    display: none;
-  }
-
-  .popular__order-content {
-    display: block;
-    margin-top: 60px;
+    margin-top: 55px;
   }
 
   .popular__price {
@@ -167,18 +198,32 @@
 
   .popular__buy {
     width: 292px;
-    margin-top: 30px;
+    margin-top: 33px;
 
     text-align: center;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .popular {
+    margin-bottom: 92px;
+  }
+
   .popular__container {
     position: relative;
 
     width: 1050px;
     margin: 0 auto;
+  }
+
+  .popular__container::before {
+    bottom: -96px;
+    left: -0;
+
+    width: 1050px;
+    height: 23px;
+
+    background-size: 1050px 23px;
   }
 
   .popular__wrapper-titles {
@@ -187,41 +232,49 @@
     width: 1050px;
     margin-left: 43px;
 
-    z-index: 100;
+    z-index: 1000;
   }
 
   .popular__wrapper-content {
+    margin-top: 48px;
     margin-left: 175px;
 
     z-index: 100;
   }
 
   .popular__title {
-    padding-top: 112px;
+    padding-top: 125px;
 
     font-size: 53px;
     line-height: 1.08;
   }
 
   .popular__subtitle {
-    padding-top: 130px;
+    padding-top: 143px;
     margin-right: 58px;
   }
 
   .popular__properties {
-    margin-top: 45px;
+    margin-top: 48px;
+  }
+
+  .popular__photo {
+    top: 71px;
+    right: 0;
+
+    width: 525px;
+    height: 636px;
   }
 
   .popular__image {
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
 
     width: 525px;
-    margin-left: 43px;
   }
 
-  .popular__order-content {
-    margin-top: 108px;
+  .popular__order {
+    margin-top: 106px;
   }
 }

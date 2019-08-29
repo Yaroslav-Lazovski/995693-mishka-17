@@ -12,7 +12,7 @@
 .social__list::after {
   content: "";
   position: absolute;
-  top: 80px;
+  top: 54px;
   left: -60px;
 
   width: 260px;
@@ -37,9 +37,9 @@
     padding-top: 5px;
   }
 
-  &:hover .social__list-insta-icon,
-  &:hover .social__list-facebook-icon,
-  &:hover .social__list-twitter-icon {
+  &:hover .social__list-insta-icon path,
+  &:hover .social__list-facebook-icon path,
+  &:hover .social__list-twitter-icon path {
     fill: #46c1ae;
   }
 
@@ -51,5 +51,11 @@
   &:focus .social__list-twitter-icon {
     fill: #46c1ae;
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__list::after {
+    display: none;
   }
 }

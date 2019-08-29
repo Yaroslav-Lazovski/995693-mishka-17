@@ -8,7 +8,9 @@ html {
   box-sizing: inherit;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -43,7 +45,9 @@ a {
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff2") format("woff2"),
-    url("../fonts/opensansbold.woff2") format("woff2");
+    url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff"),
+    url("../fonts/opensansbold.woff") format("woff");
 }
 
 @import "normalize.scss";
@@ -60,5 +64,10 @@ a {
 @import "blocks/catalog.scss";
 @import "blocks/product-list.scss";
 @import "blocks/production.scss";
+@import "blocks/contacts.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
+@import "blocks/modal-cart.scss";
+@import "blocks/modal-overlay.scss";
+@import "blocks/form-intro.scss";
+@import "blocks/form.scss";

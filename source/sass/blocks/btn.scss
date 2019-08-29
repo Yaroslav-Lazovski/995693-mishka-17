@@ -1,11 +1,27 @@
 .btn {
-  padding: 15px 85px;
+  display: block;
+  padding: 14px 0;
 
   font-size: 17px;
   font-weight: bold;
   line-height: 1.18;
+  text-align: center;
   text-transform: uppercase;
   cursor: pointer;
   color: #444444;
+
   border: solid 2px #444444;
+}
+
+.btn:hover {
+  color: #ffffff;
+
+  background-color: #444444;
+}
+
+.btn:active,
+.btn:focus {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #444444;
 }

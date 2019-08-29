@@ -173,6 +173,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-list {
+    justify-content: space-between;
+  }
+
   .site-list__item--catalog {
     position: relative;
 
@@ -226,7 +230,7 @@
   }
 
   .site-list__search-icon {
-    left: -315px;
+    left: -322px;
   }
 
   .site-list__item--cart {
@@ -247,6 +251,6 @@
 
   .site-list__item--arrivals {
     width: 175px;
-    margin-right: 45px;
+    margin-right: 50px;
   }
 }

@@ -35,6 +35,8 @@
 }
 
 .goods__list {
+  position: relative;
+
   margin: 0;
   padding: 0;
 
@@ -158,6 +160,19 @@
     line-height: 1.5;
   }
 
+  .goods__list::before {
+    position: absolute;
+    content: "";
+    bottom: -13px;
+    left: -51px;
+
+    width: 770px;
+    height: 24px;
+
+    background: url("../img/bg-zigzag-fill.svg") no-repeat 0 0;
+    background-size: 770px 24px;
+  }
+
   .goods__item {
     flex-grow: 1;
     min-height: 120px;
@@ -202,6 +217,19 @@
 
     font-size: 53px;
     line-height: 1.08;
+  }
+
+  .goods__list::before {
+    position: absolute;
+    content: "";
+    bottom: -17px;
+    left: -51px;
+
+    width: 1150px;
+    height: 34px;
+
+    background: url("../img/bg-zigzag-fill.svg") no-repeat 0 0;
+    background-size: 1150px 34px;
   }
 
   .goods__item {
