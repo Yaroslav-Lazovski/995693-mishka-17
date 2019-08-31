@@ -16,11 +16,13 @@ navBurger.addEventListener('click', function () {
 var linkBuy = document.querySelector(".popular__buy");
 var popupCart = document.querySelector(".modal-cart");
 var popupOverlay = document.querySelector(".modal-overlay");
+var popupSize = document.querySelector(".modal-cart__size");
 
 if (linkBuy) {
   linkBuy.addEventListener("click", function (evt) {
     evt.preventDefault();
     popupCart.classList.add("modal-cart-show");
+    popupSize.focus();
     popupOverlay.classList.add("modal-overlay-show");
   });
 
