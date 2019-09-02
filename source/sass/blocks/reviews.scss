@@ -165,6 +165,10 @@
     line-height: 1.16;
   }
 
+  .reviews__list {
+    width: 668px;
+  }
+
   .reviews__item {
     display: flex;
     flex-wrap: wrap;
@@ -212,6 +216,7 @@
   .reviews__write {
     order: -9;
     width: 175px;
+    margin-left: auto;
     margin-top: 79px;
     margin-bottom: 47px;
 
@@ -254,6 +259,7 @@
   }
 
   .reviews__list {
+    width: 875px;
     margin-left: 175px;
   }
 

@@ -143,8 +143,13 @@
     width: 205px;
   }
 
-  .contacts__attribute--address {
-    padding-right: 27px;
+  .contacts__address {
+    width: 334px;
+  }
+
+  .contacts__address .contacts__value--place {
+    display: block;
+    padding-left: 28px;
   }
 
   .contacts__properties td {
@@ -207,12 +212,8 @@
     padding-bottom: 30px;
   }
 
-  .contacts__properties .contacts__attribute--address {
-    padding-right: 27px;
-  }
-
   .contacts__properties .contacts__value--place {
-    padding-right: 45px;
+    padding-right: 0;
   }
 
   .contacts__feedback-container {
