@@ -74,11 +74,21 @@
     margin: 0;
   }
 
+  .nav__container {
+    width: 668px;
+  }
+
   .nav__burger {
     display: none;
   }
 
   .nav__list {
     flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav__container {
+    width: 1050px;
   }
 }

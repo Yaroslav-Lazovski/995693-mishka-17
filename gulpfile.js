@@ -45,6 +45,12 @@ gulp.task("js", function () {
     .pipe(gulp.dest("build/js"));
 });
 
+gulp.task("picturefill", function () {
+  return gulp.src("source/js/picturefill.js")
+    .pipe(jsmin())
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -96,7 +102,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    // "source/js/**",
+    "source/js/picturefill.js",
     "source/*.ico"
   ], {
     base: "source"
